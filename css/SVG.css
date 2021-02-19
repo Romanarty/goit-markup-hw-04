@@ -1,5 +1,6 @@
 /* Homework #4 */
 
+/* Header */
 .header-contacts {
   display: flex;
   justify-content: space-between;
@@ -40,6 +41,8 @@
 .contacts-link-phone:focus {
   color: var(--nav-blue);
 }
+
+/* Hero */
 .hero {
   display: flex;
   align-items: center;
@@ -118,7 +121,7 @@
   outline: 1px solid var(--nav-blue);
 }
 
-/* logo */
+/* Our clients */
 .logo5 {
   display: flex;
   width: 170px;
