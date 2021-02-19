@@ -57,7 +57,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/\ Images/banner.jpg');
+    url('/images/banner.jpg');
 }
 
 /* Advantages */
@@ -213,16 +213,13 @@
 }
 
 .h3-footer {
-  padding-left: 32px;
+  padding-left: auto;
   margin-bottom: 20px;
-  height: 16px;
-  display: block;
+  display: inline-block;
   padding-bottom: 0px;
   text-transform: uppercase;
   color: var(--general-white);
   display: inline-flex;
-  font-size: 14px;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
