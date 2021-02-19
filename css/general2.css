@@ -126,6 +126,53 @@ span {
   color: var(--nav-blue);
 }
 
+.header-contacts svg {
+  margin-right: 10px;
+}
+.header-contacts svg:hover,
+.header-contacts svg:focus {
+  stroke: currentColor;
+}
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  width: 350px;
+  height: 80px;
+}
+.contacts-link-phone {
+  color: var(--graphite);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.contacts-link-mail {
+  color: var(--graphite);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-link-mail:hover,
+.contacts-link-mail:focus {
+  color: var(--nav-blue);
+}
+.contacts-link-phone:hover,
+.contacts-link-phone:focus {
+  color: var(--nav-blue);
+}
 /* container */
 .container {
   width: 1200px;
@@ -142,7 +189,7 @@ span {
   justify-content: space-between;
   width: 611px;
   align-items: center;
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 50px;
   padding: 0px;
 }
@@ -172,12 +219,18 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px;
+  align-items: center;
+  padding: 15px;
   margin: 0px;
 }
 
+.cardset-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .cardset-item {
-  border: var(--border) 1px solid;
   margin-bottom: 30px;
 }
 
@@ -226,8 +279,10 @@ footer {
   background-color: var(--hero-graphite);
   color: var(--general-white);
   font-size: 14px;
+  height: 252px;
+  display: flex;
+  align-items: center;
 }
-
 .footer-contacts {
   padding: 0px;
   margin: 0px;
@@ -259,9 +314,11 @@ footer {
 }
 
 .footer {
-  padding: 60px 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  padding-right: 0px;
 }
-
 .footer p {
   margin: 0;
   padding-bottom: 9px;
@@ -282,69 +339,52 @@ footer {
   padding-bottom: 9px;
 }
 
-/* Header decoration */
+/* footer */
 
-.header-contacts {
+.join li {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
-  width: 350px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+}
+
+.join {
+  display: block;
+  width: 206px;
   height: 80px;
+  margin-left: 70px;
 }
-.contacts-link-phone {
-  color: var(--graphite);
-  text-decoration: none;
+.h3-footer {
+  text-transform: uppercase;
+  color: var(--general-white);
+  display: inline-flex;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 0px;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  display: flex;
-  align-items: center;
-}
-.contacts-link-mail {
-  color: var(--graphite);
-  text-decoration: none;
+  font-family: Roboto;
   font-size: 14px;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   text-align: left;
+}
+
+.social-links {
+  padding-left: 0;
   display: flex;
-  align-items: center;
+  margin: 0 auto;
 }
-
-.contacts-link-mail:hover,
-.contacts-link-mail:focus {
-  color: var(--nav-blue);
+.social-links svg {
+  width: 22px;
+  height: 22px;
+  background-position: center;
 }
-.contacts-link-phone:hover,
-.contacts-link-phone:focus {
-  color: var(--nav-blue);
-}
-
-.contacts-link-phone::before {
-  display: flex;
-  width: 10px;
-  height: 16px;
-  background-image: url(../Images/phone.svg);
-  margin-right: 10px;
-  content: '';
-}
-
-.contacts-link-mail::before {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  background-image: url(../Images/mail.svg);
-  margin-right: 10px;
-  content: '';
-  align-items: center;
-}
-.cardset-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.social-links li:hover,
+.social-links li:focus {
+  background-color: var(--nav-blue);
+  color: var(--general-white);
   cursor: pointer;
 }

@@ -28,6 +28,8 @@ body {
   --grey: #f5f4fa;
   --logo: #000000;
   --border: #ececec;
+  --footer-social-links: rgba(255, 255, 255, 0.1);
+  --team-social-links: #afb1b8;
 }
 
 .container {
@@ -230,13 +232,19 @@ p {
   padding: 0px;
   margin: 0px;
   text-align: center;
+
+  align-items: center;
 }
 
 .our-team {
   background-color: var(--grey);
   text-align: center;
+  display: block;
+
+  height: 708px;
+  padding: 0px;
+  margin: auto;
   padding-top: 94px;
-  height: 648px;
   padding-bottom: 94px;
 }
 
@@ -247,6 +255,7 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--general-white);
+  height: 428px;
 }
 
 /* footer */
@@ -267,6 +276,16 @@ footer {
   background-color: var(--hero-graphite);
   color: var(--general-white);
   font-size: 14px;
+  height: 252px;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  padding-right: 0px;
 }
 
 .footer-contacts {
@@ -296,11 +315,6 @@ footer {
   color: var(--nav-blue);
 }
 
-.footer {
-  padding: 60px 215px;
-  display: flex;
-}
-
 .footer p {
   margin: 0;
   padding-bottom: 9px;
@@ -319,7 +333,4 @@ footer {
 /* footer-contacts-link (e-mail) padding */
 [href$='info@example.com'] {
   padding-bottom: 9px;
-}
-.link-item {
-  fill: red;
 }
