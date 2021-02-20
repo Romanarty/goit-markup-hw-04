@@ -10,6 +10,14 @@
   width: 350px;
   height: 80px;
 }
+.header-contacts svg {
+  margin-right: 10px;
+}
+.header-contacts svg:hover,
+.header-contacts svg:focus {
+  stroke: currentColor;
+}
+
 .contacts-link-phone {
   color: var(--graphite);
   text-decoration: none;
@@ -37,6 +45,7 @@
 .contacts-link-mail:focus {
   color: var(--nav-blue);
 }
+
 .contacts-link-phone:hover,
 .contacts-link-phone:focus {
   color: var(--nav-blue);
@@ -122,7 +131,7 @@
 }
 
 /* Our clients */
-.logo5 {
+.logo1 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -131,10 +140,10 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 20px 62px;
+  /* padding: 20px 62px; */
 }
 
-.logo6 {
+.logo2 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -145,9 +154,9 @@
   border-radius: 4px;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 19px 65px;
+  /* padding: 19px 65px; */
 }
-.logo7 {
+.logo3 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -156,9 +165,9 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 24px 64px;
+  /* padding: 24px 64px; */
 }
-.logo8 {
+.logo4 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -167,9 +176,9 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 24px 45px;
+  /* padding: 24px 45px; */
 }
-.logo9 {
+.logo5 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -178,9 +187,9 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  padding: 22px 55px;
+  /* padding: 22px 55px; */
 }
-.logo10 {
+.logo6 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -189,7 +198,7 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  padding: 22px 40px;
+  /* padding: 22px 40px; */
 }
 
 .mail-icon:hover,
@@ -257,14 +266,7 @@
   width: 44px;
   height: 44px;
 }
-.team .social-links svg {
+/* .team .social-links svg {
   stroke: var(--team-social-links);
   margin: auto;
-}
-.header-contacts svg {
-  margin-right: 10px;
-}
-.header-contacts svg:hover,
-.header-contacts svg:focus {
-  stroke: currentColor;
-}
+} */
