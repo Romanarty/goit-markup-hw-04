@@ -1,5 +1,11 @@
 /* Homework #4 */
 
+:root {
+  --header-contacts-icons: #757575;
+  --team-social-link-icons: #afb1b8;
+  --partners-icons: #afb1b8;
+}
+
 /* Header */
 .header-contacts {
   display: flex;
@@ -9,17 +15,19 @@
   margin: 0px;
   width: 350px;
   height: 80px;
+  color: var(--graphite);
 }
+
 .header-contacts svg {
   margin-right: 10px;
+  fill: var(--graphite);
 }
 .header-contacts svg:hover,
 .header-contacts svg:focus {
-  stroke: currentColor;
+  fill: var(--nav-blue);
 }
 
 .contacts-link-phone {
-  color: var(--graphite);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -30,7 +38,6 @@
   align-items: center;
 }
 .contacts-link-mail {
-  color: var(--graphite);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -39,16 +46,6 @@
   text-align: left;
   display: flex;
   align-items: center;
-}
-
-.contacts-link-mail:hover,
-.contacts-link-mail:focus {
-  color: var(--nav-blue);
-}
-
-.contacts-link-phone:hover,
-.contacts-link-phone:focus {
-  color: var(--nav-blue);
 }
 
 /* Hero */
@@ -124,26 +121,35 @@
   margin: 0 auto;
   padding-top: 0px;
 }
-.clients-link svg:hover,
-.clients-link svg:focus {
+
+.clients-link svg {
+  fill: var(--partners-icons);
+}
+
+.clients-link li:hover,
+.clients-link li:focus {
   stroke: var(--nav-blue);
   outline: 1px solid var(--nav-blue);
+  cursor: pointer;
+}
+
+.clients-link svg:hover,
+.clients-link svg:focus {
+  fill: var(--nav-blue);
 }
 
 /* Our clients */
-.logo1 {
+.logo-1 {
   display: flex;
   width: 170px;
   height: 90px;
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
-  /* padding: 20px 62px; */
 }
 
-.logo2 {
+.logo-2 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -152,11 +158,8 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* padding: 19px 65px; */
 }
-.logo3 {
+.logo-3 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -165,9 +168,8 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  /* padding: 24px 64px; */
 }
-.logo4 {
+.logo-4 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -176,9 +178,8 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  /* padding: 24px 45px; */
 }
-.logo5 {
+.logo-5 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -187,9 +188,8 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  /* padding: 22px 55px; */
 }
-.logo6 {
+.logo-6 {
   display: flex;
   width: 170px;
   height: 90px;
@@ -198,7 +198,6 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  /* padding: 22px 40px; */
 }
 
 .mail-icon:hover,
@@ -245,13 +244,20 @@
   align-items: center;
   height: 44px;
   width: 206px;
+  fill: var(--footer-social-link-icons);
 }
 .social-links svg {
   width: 22px;
   height: 22px;
   background-position: center;
   margin: auto;
+  fill: var(--general-white);
 }
+
+.team .social-links svg {
+  fill: var(--team-social-link-icons);
+}
+
 .social-links li:hover,
 .social-links li:focus {
   background-color: var(--nav-blue);
@@ -266,7 +272,3 @@
   width: 44px;
   height: 44px;
 }
-/* .team .social-links svg {
-  stroke: var(--team-social-links);
-  margin: auto;
-} */
