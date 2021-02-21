@@ -59,7 +59,6 @@ body {
 .page-header {
   display: flex;
   justify-content: center;
-  vertical-align: middle;
   margin-bottom: 1px;
   outline: 1px var(--border);
   min-height: 80px;
