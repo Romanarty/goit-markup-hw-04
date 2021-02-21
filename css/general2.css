@@ -31,14 +31,6 @@ body {
 }
 
 /* header */
-.page-header {
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-  margin-bottom: 1px;
-  outline: 1px var(--border);
-  min-height: 80px;
-}
 
 .header {
   padding-right: 215px;
@@ -48,7 +40,16 @@ body {
   align-items: center;
   vertical-align: middle;
   border-bottom: var(--border) 1px solid;
+  height: 80px;
 }
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  outline: 1px var(--border);
+}
+
 .logo {
   text-decoration: none;
   color: var(--logo);
@@ -80,10 +81,10 @@ span {
 .nav {
   display: flex;
   align-items: center;
-  padding: 0px;
-  padding: 32px 0px 32px 93px;
-  margin: 0;
-  justify-content: center;
+  justify-content: space-between;
+  width: 294px;
+  margin-left: 93px;
+  padding: 0;
 }
 
 .nav-link {
@@ -91,7 +92,6 @@ span {
   text-decoration: none;
   font-size: 14px;
   display: block;
-  padding-left: 50px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -107,9 +107,10 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0px 32px 0px;
-  margin: 0px;
-  width: 310px;
+  margin-left: auto;
+  width: 350px;
+
+  padding: 0;
 }
 .contacts-link {
   color: var(--graphite);
@@ -134,15 +135,7 @@ span {
 .header-contacts svg:focus {
   fill: currentColor;
 }
-.header-contacts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
-  width: 350px;
-  height: 80px;
-}
+
 .contacts-link-phone {
   color: var(--graphite);
   text-decoration: none;
@@ -176,8 +169,8 @@ span {
 }
 /* container */
 .container {
-  width: 1200px;
-  padding: 94px 15px;
+  width: 1170px;
+  padding: 94px 0px;
   margin: 0px auto;
 }
 
@@ -191,7 +184,7 @@ span {
   width: 611px;
   align-items: center;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 0px;
 }
 
@@ -220,7 +213,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px;
+  padding: 0px;
   margin: auto;
 }
 
@@ -231,7 +224,9 @@ button {
 }
 
 .cardset-item {
-  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid;
+  border-color: #eeeeee;
 }
 
 img {
