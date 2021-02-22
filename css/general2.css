@@ -30,18 +30,20 @@ body {
 }
 
 /* header */
+header {
+  border-bottom: var(--border) 1px solid;
+  margin: auto;
+  width: 1200px;
+}
 
 .header {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-  border-bottom: var(--border) 1px solid;
   height: 80px;
-  margin: auto;
 }
 
 .page-header {
