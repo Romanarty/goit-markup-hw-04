@@ -1,7 +1,6 @@
 body {
   color: #212121;
   font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
   margin: auto;
 }
 
@@ -33,14 +32,16 @@ body {
 /* header */
 
 .header {
-  padding-right: 215px;
-  padding-left: 215px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
   border-bottom: var(--border) 1px solid;
   height: 80px;
+  margin: auto;
 }
 
 .page-header {
@@ -274,9 +275,11 @@ footer {
   background-color: var(--hero-graphite);
   color: var(--general-white);
   font-size: 14px;
-  height: 252px;
   display: flex;
   align-items: center;
+  margin: auto;
+  width: 1600px;
+  height: 252px;
 }
 .footer-contacts {
   padding: 0px;
