@@ -30,9 +30,12 @@ body {
 }
 
 /* header */
-
-.header {
+header {
   border-bottom: var(--border) 1px solid;
+  max-width: 1600px;
+  margin: auto;
+}
+.header {
   max-width: 1200px;
   margin: auto;
   padding-right: 15px;
