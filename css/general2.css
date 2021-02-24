@@ -30,17 +30,17 @@ body {
 }
 
 /* header */
+
 .header {
   border-bottom: var(--border) 1px solid;
-  margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
+  margin: auto;
   padding-right: 15px;
   padding-left: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-  height: 80px;
 }
 
 .page-header {
@@ -48,6 +48,8 @@ body {
   justify-content: center;
   vertical-align: middle;
   outline: 1px var(--border);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo {
