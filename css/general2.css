@@ -32,18 +32,16 @@ body {
 /* header */
 header {
   border-bottom: var(--border) 1px solid;
-  max-width: 1600px;
-  margin: auto;
 }
+
 .header {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  vertical-align: middle;
 }
 
 .page-header {
@@ -278,13 +276,18 @@ h2 {
 footer {
   background-color: var(--hero-graphite);
   color: var(--general-white);
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  margin: auto;
-  width: 1600px;
-  height: 252px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
+.footer-container {
+  align-items: center;
+  display: flex;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .footer-contacts {
   padding: 0px;
   margin: 0px;
@@ -315,12 +318,6 @@ footer {
   color: var(--nav-blue);
 }
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 215px;
-  padding-right: 0px;
-}
 .footer p {
   margin: 0;
   padding-bottom: 9px;
@@ -353,8 +350,6 @@ footer {
 
 .join {
   display: block;
-  width: 206px;
-  height: 80px;
   margin-left: 70px;
 }
 .h3-footer {
@@ -365,7 +360,6 @@ footer {
   margin-bottom: 20px;
   margin-top: 0px;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
